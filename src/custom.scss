@@ -1,0 +1,62 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// Custom variables goes here
+
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap';
+
+$font-family-base: 'Poppins';
+
+$theme-colors: (
+	'primary': #de0e30,
+	'secondary': #343645,
+	'warning': #ff026b,
+	'info': #ccc,
+	'gray': #111,
+	'p1': #181818,
+	'b1': #fff7e9,
+	'b2': #f7f7f8,
+	't1': #f377dc,
+	't2': #5e28a1,
+	't3': #16032e,
+	's1': #1e0146,
+	's2': #19b9ce,
+	's3': #fac605,
+	'gray700': #0d0d0d,
+);
+
+// $box-shadow: 0 0 40px rgba(#de0e30, 0.7);
+
+$border-color: #5e28a1;
+
+$utilities: (
+	// 'box-shadow': (
+	// 	property: box-shadow,
+	// 	class: shadow,
+	// 	state: hover,
+	// 	values: (
+	// 		null: $box-shadow,
+	// 		// default
+	// 		none: none,
+	// 	),
+	// ),
+	'hover':
+		(
+			property: transform,
+			class: rdv,
+			state: hover,
+			values: (
+				null: scale(1.05),
+			),
+		),
+	'transition': (
+		property: transition,
+		class: transition,
+		values: (
+			null: all 0.3s ease-out,
+		),
+	)
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
